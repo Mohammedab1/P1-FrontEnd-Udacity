@@ -259,3 +259,11 @@ i:hover{
   left: 84%;
   bottom: 8%;
 }
+
+#PDate{
+    position: relative;
+    top: 45%;
+
+     font-size: 16px;
+     font-style: italic;
+   }

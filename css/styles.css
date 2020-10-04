@@ -46,8 +46,8 @@ body{
         "hd hd hd hd hd hd hd hd"
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
-        border: 2px solid red;
     }
+
   }
 
   @media(min-width:1101px) {
@@ -61,7 +61,7 @@ body{
           "main main main main main main main main"
           "ft ft ft ft ft ft ft ft";
       }
-
+      
     }
  
     .nestedGrid{
@@ -100,6 +100,7 @@ body{
     position: relative;
     left: 43%;
   }
+  
  }
     #first{
       grid-area: one;
@@ -199,4 +200,62 @@ i{
 }
 i:hover{
   color: #ABB2B9;
+}
+.post{
+  display: grid;
+  grid-template-rows: 150px 200px 100px;
+  grid-template-columns:650px;
+  justify-content: center;
+  grid-template-areas:
+   "ti"
+  "postCont"
+  "butn";
+  margin: 30px 150px; 
+  grid-gap: 6%;
+  grid-row-gap: 50px;
+}
+.postTit{
+  grid-area: ti ;
+
+
+}
+.postContent{
+  grid-area: postCont;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+.postButtons{
+  grid-area: butn;
+  padding-bottom: 20px;
+}
+.postimg{
+  position: relative;
+  width: 140px;
+  height: 140px;
+  left: 82%;
+  border-radius: 50%;
+
+}
+.postHeader{
+  position: absolute;
+  font-family: 'EB Garamond', serif;
+  top: 27%;
+}
+.btne{
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #2C3e50;
+  margin: 0 5px;
+}
+.btne:hover{
+  background-color: #2C3e50;
+}
+.Auther{
+  position: relative;
+  left: 84%;
+  bottom: 8%;
 }
